@@ -499,6 +499,7 @@ ul {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    -webkit-filter: brightness(.8);
 }
 
 .contador {
@@ -543,6 +544,120 @@ ul {
     color: var(--color-naranja);
     font-size: 60px;
     margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+
+/*    Tabla de precios      */
+
+.lista-precios>li {
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+    .lista-precios {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+.tabla-precio {
+    border: 2px solid #e1e1e1;
+    background-color: white;
+    padding: 40px 40px 20px 40px;
+    text-align: center;
+    transition: all .4s ease-in-out;
+}
+
+.tabla-precio:hover {
+    transform: scale(1.1);
+    border: 2px solid var(--color-naranja);
+    box-shadow: 0px 0px 50px #666
+}
+
+.tabla-precio ul li {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #868686;
+    line-height: 26px;
+}
+
+.tabla-precio ul li::before {
+    font-family: 'FontAwesome';
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 5px;
+    color: green;
+    -webkit-font-smoothing: antialiased;
+    content: '\f00c';
+}
+
+.tabla-precio h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.tabla-precio .numero {
+    color: black;
+    margin: 20px 0;
+}
+
+
+/*  Mapa    */
+
+.mapa {
+    height: 300px;
+    background-color: green;
+}
+
+
+/*       Testimoniales       */
+
+@media (min-width: 768px) {
+    .testimoniales img {
+        max-width: 100%;
+    }
+    .testimoniales {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+blockquote {
+    background-color: whites;
+    border: 2px solid #e1e1e1;
+    position: relative;
+    margin: 0 0 10px 0;
+    padding-bottom: 20px;
+}
+
+blockquote p {
+    text-align: justify;
+    font-size: .7em;
+    font-family: 'PT Sans', sans-serif;
+    padding: 0 20px 0 65px;
+}
+
+blockquote img {
+    width: 20%;
+}
+
+blockquote p::before {
+    content: '\201c';
+    position: absolute;
+    left: 30px;
+    top: 0px;
+    font-size: 8em;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: var(--color-naranja);
 }
 
 
