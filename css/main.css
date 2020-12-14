@@ -182,6 +182,11 @@ h3 {
     display: inline-block;
 }
 
+.transparente {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
 ul {
     list-style: none;
     margin: 0;
@@ -685,6 +690,37 @@ blockquote p::before {
     text-align: left;
     font-weight: 200;
     margin-top: 10px;
+}
+
+
+/*   Newsletter       */
+
+.newsletter {
+    position: relative;
+    height: auto;
+}
+
+.newsletter::before {
+    background-image: url(../img/bg-newsletter.jpg);
+    content: '';
+}
+
+.newsletter .contenido {
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.newsletter .contenido p {
+    font-size: 18px;
+}
+
+.newsletter .contenido h3 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 7vw;
+    font-family: 'PT Sans', sans-serif;
 }
 
 
