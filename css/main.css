@@ -724,6 +724,66 @@ blockquote p::before {
 }
 
 
+/* Cuenta regresiva*/
+
+.cuenta-regresiva ul li {
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .cuenta-regresiva ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+
+/*     footer     */
+
+.site-footer {
+    background-color: var(--color-casiNegro);
+    color: white;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.site-footer h3 {
+    color: white;
+}
+
+.site-footer h3 span {
+    color: var(--color-naranja);
+}
+
+.site-footer li {
+    font-family: 'PT Sans', sans-serif;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .footer-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-informacion {
+        flex-basis: 40%;
+    }
+    .ultimos-tweets {
+        flex-basis: 30%;
+    }
+}
+
+.derechos {
+    background-color: #2e2e2e;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
 /* ==========================================================================
    Helper classes{
        
