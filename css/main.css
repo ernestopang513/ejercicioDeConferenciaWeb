@@ -789,14 +789,14 @@ blockquote p::before {
 
 /* Registro */
 
-form .registro h3 {
+.registro h3 {
     text-align: center;
     text-transform: uppercase;
     margin: 20px 0 0 0;
 }
 
-form .registro label {
-    margin-bottom: 5px;
+.registro label {
+    margin-bottom: 20px;
     font-weight: bold;
 }
 
@@ -813,6 +813,83 @@ h4 {
     border: 1px solid #e1e1e1;
     padding: 10px;
     margin: 10px;
+}
+
+.campo {
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .campo-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.paquetes .tabla-precio:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.paquetes .tabla-precio input {
+    clear: both;
+    margin: 10px auto 0 auto;
+    display: block;
+}
+
+.contenido-dia {
+    padding: 20px;
+}
+
+.contenido-dia-flex label {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .contenido-dia-flex {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .basis-cnt-dia {
+        flex-basis: 30%;
+    }
+}
+
+.contenido-dia-flex input {
+    margin-right: 10px;
+}
+
+.contenido-dia label time {
+    color: #fe4918;
+    font-weight: bold;
+}
+
+
+/* Resumen productos */
+
+.resumen p {
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .resumen-flex {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.orden {
+    margin-bottom: 15px;
+}
+
+.orden label {
+    display: block;
+}
+
+.orden select {
+    margin-left: 20px;
 }
 
 
